@@ -7,6 +7,7 @@ A = [7, 1, 2, 8, 2] → 2
 A = [3, 1, 4, 1, 5] → 0
 """
 
+A = [7, 1, 2, 8, 2]
 
 def solution(A):
   freq = {}
@@ -22,6 +23,18 @@ def solution(A):
     if freq[x] == x:
       answer = max(answer, x)
   return answer
+
+
+def solution_opt(A):
+  from collections import Counter
+
+  frequency_map = Counter(A)
+  valid_numbers = [number for number, freq in frequency_map.items() if number == freq]
+
+  if not valid_numbers:
+    return 0
+
+  return max(valid_numbers)
 
 
 # Test cases
