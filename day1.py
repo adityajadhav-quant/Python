@@ -29,9 +29,9 @@ print(solution([3, 8, 2, 3, 3, 2]))   # Expected output: 3
 print(solution([7, 1, 2, 8, 2]))      # Expected output: 2
 print(solution([3, 1, 4, 1, 5]))      # Expected output: 0
 print(solution([5, 5, 5, 5, 5]))      # Expected output: 5
-print(solution([]))                   # Expected output: 0 (empty array)
-print(solution([1]))                  # Expected output: 1 (1 appears once)
-print(solution([2, 2, 2]))            # Expected output: 0 (appears 3 times, not 2)
+print(solution([]))                   # Expected output: 0
+print(solution([1]))                  # Expected output: 1
+print(solution([2, 2, 2]))            # Expected output: 0
 print(solution([4, 4, 4, 4]))         # Expected output: 4
 print(solution([1, 2, 2, 3, 3, 3]))   # Expected output: 3
 
